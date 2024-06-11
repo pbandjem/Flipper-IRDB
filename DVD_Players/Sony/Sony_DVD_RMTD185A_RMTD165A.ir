@@ -11,18 +11,54 @@ protocol: SIRC20
 address: 3A 09 00 00
 command: 15 00 00 00
 # 
-name: Tv_power
-type: parsed
-protocol: SIRC
-address: 01 00 00 00
-command: 15 00 00 00
-# 
-name: Open_close
+name: Open_Close
 type: parsed
 protocol: SIRC20
 address: 3A 09 00 00
 command: 16 00 00 00
 # 
+name: Pause
+type: parsed
+protocol: SIRC20
+address: 3A 09 00 00
+command: 39 00 00 00
+# 
+name: Stop
+type: parsed
+protocol: SIRC20
+address: 3A 09 00 00
+command: 38 00 00 00
+# 
+name: Play
+type: parsed
+protocol: SIRC20
+address: 3A 09 00 00
+command: 32 00 00 00
+#
+name: Scan_back
+type: parsed
+protocol: SIRC20
+address: 3A 09 00 00
+command: 22 00 00 00
+# 
+name: Scan_fwd
+type: parsed
+protocol: SIRC20
+address: 3A 09 00 00
+command: 23 00 00 00
+# 
+name: Prev
+type: parsed
+protocol: SIRC20
+address: 3A 09 00 00
+command: 30 00 00 00
+# 
+name: Next
+type: parsed
+protocol: SIRC20
+address: 3A 09 00 00
+command: 31 00 00 00
+#
 name: 1
 type: parsed
 protocol: SIRC20
@@ -143,18 +179,6 @@ protocol: SIRC20
 address: 3A 09 00 00
 command: 5A 00 00 00
 # 
-name: Prev
-type: parsed
-protocol: SIRC20
-address: 3A 09 00 00
-command: 30 00 00 00
-# 
-name: Next
-type: parsed
-protocol: SIRC20
-address: 3A 09 00 00
-command: 31 00 00 00
-# 
 name: Zoom
 type: parsed
 protocol: SIRC20
@@ -167,18 +191,12 @@ protocol: SIRC20
 address: 3A 09 00 00
 command: 50 00 00 00
 # 
-name: Scan_back
+name: Tv_power
 type: parsed
-protocol: SIRC20
-address: 3A 09 00 00
-command: 22 00 00 00
-# 
-name: Scan_fwd
-type: parsed
-protocol: SIRC20
-address: 3A 09 00 00
-command: 23 00 00 00
-# 
+protocol: SIRC
+address: 01 00 00 00
+command: 15 00 00 00
+#
 name: Inst_rply_adv_back
 type: parsed
 protocol: SIRC20
@@ -190,24 +208,6 @@ type: parsed
 protocol: SIRC20
 address: 5A 0C 00 00
 command: 14 00 00 00
-# 
-name: Play
-type: parsed
-protocol: SIRC20
-address: 3A 09 00 00
-command: 32 00 00 00
-# 
-name: Pause
-type: parsed
-protocol: SIRC20
-address: 3A 09 00 00
-command: 39 00 00 00
-# 
-name: Stop
-type: parsed
-protocol: SIRC20
-address: 3A 09 00 00
-command: 38 00 00 00
 # 
 name: Up
 type: parsed
